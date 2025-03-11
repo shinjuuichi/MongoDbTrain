@@ -28,6 +28,6 @@ jobs:
 
       - name: Push Images to Docker Hub
         run: |
-          docker push shinjuuichi/api-gateway:latest
-          docker push shinjuuichi/api-gateway:${{ env.VERSION }}
+          docker push shinjuuichi/product-service-mongodb:latest
+          docker push shinjuuichi/product-service-mongodb:${{ env.VERSION }}
 
