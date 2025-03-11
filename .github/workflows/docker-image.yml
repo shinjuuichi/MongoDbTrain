@@ -1,0 +1,33 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Version
+        run: echo "VERSION=1.0.${{ github.run_number }}" >> $GITHUB_ENV
+
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build and Tag Docker Images
+        run: |
+          docker build -t shinjuuichi/product-service-mongodb:latest -t shinjuuichi/product-service-mongodb:${{ env.VERSION }} -f ProductManagement.Api/Dockerfile .
+
+      - name: Push Images to Docker Hub
+        run: |
+          docker push shinjuuichi/product-service-mongodb:latest
+          docker push shinjuuichi/product-service-mongodb:${{ env.VERSION }}
+
