@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Api", "ProductManagement.Api\ProductManagement.Api.csproj", "{33B9955F-FF96-C40D-5D1A-8661BEDDFA5F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoLearn.AppHost", "MongoLearn.AppHost\MongoLearn.AppHost.csproj", "{6CDAEDB1-04BE-4E69-AA40-B90E818CEE52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoLearn.ServiceDefaults", "MongoLearn.ServiceDefaults\MongoLearn.ServiceDefaults.csproj", "{AE36621D-E009-5B11-CD73-6E48EDDEE0FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Api", "Product.Api\Product.Api.csproj", "{05B4568D-511E-4F3E-1881-F4A770AAFBAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{33B9955F-FF96-C40D-5D1A-8661BEDDFA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33B9955F-FF96-C40D-5D1A-8661BEDDFA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33B9955F-FF96-C40D-5D1A-8661BEDDFA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33B9955F-FF96-C40D-5D1A-8661BEDDFA5F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6CDAEDB1-04BE-4E69-AA40-B90E818CEE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CDAEDB1-04BE-4E69-AA40-B90E818CEE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDAEDB1-04BE-4E69-AA40-B90E818CEE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{AE36621D-E009-5B11-CD73-6E48EDDEE0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE36621D-E009-5B11-CD73-6E48EDDEE0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE36621D-E009-5B11-CD73-6E48EDDEE0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B4568D-511E-4F3E-1881-F4A770AAFBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B4568D-511E-4F3E-1881-F4A770AAFBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B4568D-511E-4F3E-1881-F4A770AAFBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B4568D-511E-4F3E-1881-F4A770AAFBAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
